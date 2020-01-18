@@ -8,8 +8,9 @@ namespace ReverseString
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            Stack<char> stackChars = new Stack<char>(input);
+            var inputString = Console.ReadLine();
+            Stack<char> stackChars = new Stack<char>(inputString);
+            Console.Write("Reverse string: ");
             while (stackChars.Count > 0)
             {
                 Console.Write(stackChars.Pop());
